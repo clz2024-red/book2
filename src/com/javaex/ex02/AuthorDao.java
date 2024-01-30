@@ -20,7 +20,7 @@ public class AuthorDao {
 	// 메소드-gs
 
 	// 메소드-일반
-	public void getConnection() {
+	private void getConnection() {
 
 		try {
 			// 1. JDBC 드라이버 (Oracle) 로딩
@@ -40,7 +40,7 @@ public class AuthorDao {
 		
 	}//getConnection()
 	
-	public void close() {
+	private void close() {
 		// 5. 자원정리
 		try {
 			if (pstmt != null) {
